@@ -65,7 +65,7 @@ const Header = () => {
     <HeaderDiv>
       <HeaderSpan date>SMARCH 32, 2018</HeaderSpan>
       <HeaderH1>Lambda Times</HeaderH1>
-      <HeaderSpan temp> 98°</HeaderSpan>
+      <HeaderSpan temp>98°</HeaderSpan>
     </HeaderDiv>
   )
 }
