@@ -1,10 +1,8 @@
-import React from 'react';
+import React from "react";
 import styled, { css } from "styled-components";
 
-
-// Refactor this component to use styled components and not classNames. 
+// Refactor this component to use styled components and not classNames.
 // You can find the corresponding CSS in the CSS/index.css file
-
 
 const TopBarDiv = styled.div`
   width: 100%;
@@ -15,7 +13,6 @@ const TopBarDiv = styled.div`
   position: fixed;
   height: 44px;
   background-color: #333;
-
 `;
 
 const TBContainerDiv = styled.div`
@@ -33,7 +30,6 @@ const TBContainerDiv = styled.div`
       width: 1280px;
     }
   }
-
 `;
 
 const ContainerLeftDiv = styled.div`
@@ -92,17 +88,22 @@ const TopBar = () => {
     <TopBarDiv>
       <TBContainerDiv>
         <ContainerLeftDiv>
-          <LeftSpan>TOPICS</LeftSpan><LeftSpan>SEARCH</LeftSpan>
+          <LeftSpan>TOPICS</LeftSpan>
+          <LeftSpan>SEARCH</LeftSpan>
         </ContainerLeftDiv>
         <ContainerCenterDiv>
-          <CenterSpan>GENERAL</CenterSpan><CenterSpan>BROWNBAG</CenterSpan><CenterSpan>RANDOM</CenterSpan><CenterSpan>MUSIC</CenterSpan><CenterSpan>ANNOUNCEMENTS</CenterSpan>
+          <CenterSpan>GENERAL</CenterSpan>
+          <CenterSpan>BROWNBAG</CenterSpan>
+          <CenterSpan>RANDOM</CenterSpan>
+          <CenterSpan>MUSIC</CenterSpan>
+          <CenterSpan>ANNOUNCEMENTS</CenterSpan>
         </ContainerCenterDiv>
         <ContainerRightDiv>
           <RightSpan>LOG IN</RightSpan>
         </ContainerRightDiv>
       </TBContainerDiv>
     </TopBarDiv>
-  )
-}
+  );
+};
 
 export default TopBar;
