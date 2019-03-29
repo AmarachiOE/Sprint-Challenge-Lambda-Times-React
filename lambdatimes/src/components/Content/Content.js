@@ -8,6 +8,7 @@ import { tabData, cardData } from '../../data';
 
 export default class Content extends Component {
   constructor(props) {
+    console.log("constructor running");
     super(props);
     this.state = {
       selected: 'all',
@@ -18,6 +19,7 @@ export default class Content extends Component {
 
   componentDidMount() {
     // Once the component has mounted, get the data and reflect that data on the state.
+    console.log("CDM running");
     this.setState({
       tabs: tabData,
       cards: cardData,
@@ -46,6 +48,7 @@ export default class Content extends Component {
   };
 
   render() {
+    console.log("render running");
     return (
       <div className="content-container">
         {/* 
